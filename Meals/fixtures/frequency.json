@@ -1,0 +1,51 @@
+[
+    {
+      "model": "Meals.Frequencies",
+      "pk": 1,
+      "fields": {
+        "name": "Weekly",
+        "duration": 7
+      }
+    },
+    {
+      "model": "Meals.Frequencies",
+      "pk": 2,
+      "fields": {
+        "name": "Monthly",
+        "duration": 30
+      }
+    },
+    {
+      "model": "Meals.Frequencies",
+      "pk": 3,
+      "fields": {
+        "name": "Bi-Monthly",
+        "duration": 15
+      }
+    },
+    {
+      "model": "Meals.Frequencies",
+      "pk": 4,
+      "fields": {
+        "name": "Quarterly",
+        "duration": 90
+      }
+    },
+    {
+      "model": "Meals.Frequencies",
+      "pk": 5,
+      "fields": {
+        "name": "Bi-Yearly",
+        "duration": 180
+      }
+    },
+    {
+      "model": "Meals.Frequencies",
+      "pk": 6,
+      "fields": {
+        "name": "Yearly",
+        "duration": 365
+      }
+    }
+  ]
+  

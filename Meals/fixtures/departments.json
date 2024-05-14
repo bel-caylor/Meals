@@ -1,0 +1,80 @@
+[
+    {
+      "model": "Meals.Departments",
+      "pk": 1,
+      "fields": {
+        "name": "Produce"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 2,
+      "fields": {
+        "name": "Deli"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 3,
+      "fields": {
+        "name": "Dairy"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 4,
+      "fields": {
+        "name": "Meat"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 5,
+      "fields": {
+        "name": "Frozen"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 6,
+      "fields": {
+        "name": "Pasta"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 7,
+      "fields": {
+        "name": "Beans"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 8,
+      "fields": {
+        "name": "Soups"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 9,
+      "fields": {
+        "name": "Baking"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 10,
+      "fields": {
+        "name": "Cereal"
+      }
+    },
+    {
+      "model": "Meals.Departments",
+      "pk": 11,
+      "fields": {
+        "name": "Canned"
+      }
+    }
+  ]
+  

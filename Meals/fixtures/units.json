@@ -1,0 +1,66 @@
+[
+    {
+      "model": "Meals.Units",
+      "pk": 1,
+      "fields": {
+        "name": "cups"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 2,
+      "fields": {
+        "name": "lbs"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 3,
+      "fields": {
+        "name": "oz"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 4,
+      "fields": {
+        "name": "pkg"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 5,
+      "fields": {
+        "name": "can"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 6,
+      "fields": {
+        "name": "tsp"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 7,
+      "fields": {
+        "name": "tbls"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 8,
+      "fields": {
+        "name": "quart"
+      }
+    },
+    {
+      "model": "Meals.Units",
+      "pk": 9,
+      "fields": {
+        "name": "gallon"
+      }
+    }
+  ]
+  

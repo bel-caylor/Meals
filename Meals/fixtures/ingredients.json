@@ -1,0 +1,113 @@
+[
+    {
+      "model": "Meals.Ingredients",
+      "pk": 1,
+      "fields": {
+        "ingredient": "Milk",
+        "location": 1,
+        "unit": 1,
+        "qty": 1,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 2,
+      "fields": {
+        "ingredient": "Eggs",
+        "location": 1,
+        "unit": 12,
+        "qty": 1,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 3,
+      "fields": {
+        "ingredient": "Bread",
+        "location": 2,
+        "unit": "loaf",
+        "qty": 1,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 4,
+      "fields": {
+        "ingredient": "Butter",
+        "location": 1,
+        "unit": 1,
+        "qty": 0.5,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 5,
+      "fields": {
+        "ingredient": "Onions",
+        "location": 2,
+        "unit": "each",
+        "qty": 2,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 6,
+      "fields": {
+        "ingredient": "Garlic",
+        "location": 2,
+        "unit": "each",
+        "qty": 3,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 7,
+      "fields": {
+        "ingredient": "Salt",
+        "location": 2, 
+        "unit": "tsp",
+        "qty": 1,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 8,
+      "fields": {
+        "ingredient": "Black Pepper",
+        "location": 2,
+        "unit": "tsp",
+        "qty": 0.5,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 9,
+      "fields": {
+        "ingredient": "Olive Oil",
+        "location": 2, 
+        "unit": 1,
+        "qty": 0.25,
+        "is_favorite": true
+      }
+    },
+    {
+      "model": "Meals.Ingredients",
+      "pk": 10,
+      "fields": {
+        "ingredient": "Chicken Breast",
+        "location": 3,
+        "unit": "lbs", 
+        "qty": 1,
+        "is_favorite": true
+      }
+    }
+]
+    

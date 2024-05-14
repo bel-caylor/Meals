@@ -1,0 +1,10 @@
+[
+    {
+      "model": "Meals.Stores",
+      "pk": 1,
+      "fields": {
+        "store_name": "Walmart Market",
+        "address": "De Zavala"
+      }
+    }
+]

@@ -23,21 +23,28 @@ class Categories(models.Model):
     return self.category
   
 class Departments(models.Model):
-  """Model for recipe categories (e.g., breakfast, dessert)."""
+  """Model for recipe departments (e.g., diary, meat)."""
   department = models.CharField(max_length=255, unique=True)
 
   def __str__(self):
-    return self.category
+    return self.department
 
 class Frequencies(models.Model):
   """Model for recipe frequencies (e.g., daily, weekly)."""
   frequency = models.CharField(max_length=255)
-  days = models.IntegerField(blank=True)
+  duration = models.IntegerField(blank=True)
+
+class Locations(models.Model):
+  """Model for ingredient locations (e.g., fridge, pantry)."""
+  location = models.CharField(max_length=255, unique=True)
+
+  def __str__(self):
+    return self.department
 
 class Ingredients(models.Model):
   """Model for ingredients used in recipes."""
   ingredient = models.CharField(max_length=255)
-  location = models.CharField(max_length=255, blank=True)
+  location = models.ForeignKey(Locations, on_delete=models.CASCADE)
   qty = models.FloatField(blank=True, null=True)  # Can be null if not tracked
   unit = models.ForeignKey(Units, on_delete=models.CASCADE)
   is_favorite = models.BooleanField(default=False)
