@@ -1,5 +1,7 @@
 [MASTER]
-ignore-patterns=^meals/migrations/.*$
+ignore-patterns=(
+    "meals/migrations",
+)
 
 [MAIN]
 max-line-length=130
