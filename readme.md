@@ -46,7 +46,7 @@ How to start your project
 cd Meals-Django-React
 python -m venv myvenv
 myvenv\Scripts\activate
-pip install django
+pip install -r requirements.txt
 pip install mysqlclient
 ```
 Run XAMPP.  Start Apache and MySQL.
