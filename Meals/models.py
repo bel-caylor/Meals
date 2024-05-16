@@ -1,3 +1,4 @@
+"""models.py"""
 from django.db import models
 
 class Unit(models.Model):
@@ -5,7 +6,7 @@ class Unit(models.Model):
     name = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 class Store(models.Model):
     """Model for stores where ingredients can be purchased."""
@@ -13,21 +14,21 @@ class Store(models.Model):
     address = models.TextField()
 
     def __str__(self):
-        return self.store_name
+        return str(self.store_name)
 
 class Category(models.Model):
     """Model for recipe categories (e.g., breakfast, dessert)."""
     category = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
-        return self.category
+        return str(self.category)
     
 class Department(models.Model):
     """Model for recipe departments (e.g., diary, meat)."""
     department = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
-        return self.department
+        return str(self.department)
 
 class Frequency(models.Model):
     """Model for recipe frequencies (e.g., daily, weekly)."""
@@ -35,14 +36,14 @@ class Frequency(models.Model):
     duration = models.IntegerField(blank=True)
 
     def __str__(self):
-        return self.frequency
+        return str(self.frequency)
 
 class Location(models.Model):
     """Model for ingredient locations (e.g., fridge, pantry)."""
     location = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
-        return self.department
+        return str(self.location)
 
 class Ingredient(models.Model):
     """Model for ingredients used in recipes."""
@@ -53,7 +54,7 @@ class Ingredient(models.Model):
     is_favorite = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.ingredient
+        return str(self.ingredient)
 
 class Recipe(models.Model):
     """Model for recipes."""
@@ -66,7 +67,7 @@ class Recipe(models.Model):
     frequency = models.ForeignKey('Frequency', on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
-        return self.recipe_name
+        return str(self.recipe_name)
 
 class RecipeIngredient(models.Model):
     """Model for associating ingredients with recipes."""
@@ -77,7 +78,8 @@ class RecipeIngredient(models.Model):
     is_optional = models.BooleanField(default=False)
 
     class Meta:
-        unique_together = (('recipe', 'ingredient'),)    # Ensure unique combination of recipe and ingredient
+        """Foreign Keys unique combo"""
+        unique_together = (('recipe', 'ingredient'),)
 
     def __str__(self):
         return f"{self.recipe.recipe_name} - {self.ingredient.ingredient}"
@@ -101,7 +103,8 @@ class Price(models.Model):
     cost = models.DecimalField(max_digits=10, decimal_places=2)
 
     class Meta:
-        unique_together = (('product', 'date'),)    # Ensure unique combination of product and date
+        """Foreign Keys unique combo"""
+        unique_together = (('product', 'date'),)
 
     def __str__(self):
         return f"{self.product.ingredient.ingredient} - {self.product.brand} - {self.date} (${self.cost})"
