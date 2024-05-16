@@ -1,2 +1,8 @@
 [MASTER]
 ignore-patterns=^meals/migrations/.*$
+
+[MAIN]
+max-line-length=130
+
+[MESSAGES]
+disable=too-few-public-methods

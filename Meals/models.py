@@ -22,7 +22,7 @@ class Category(models.Model):
 
     def __str__(self):
         return str(self.category)
-    
+
 class Department(models.Model):
     """Model for recipe departments (e.g., diary, meat)."""
     department = models.CharField(max_length=255, unique=True)
@@ -108,3 +108,4 @@ class Price(models.Model):
 
     def __str__(self):
         return f"{self.product.ingredient.ingredient} - {self.product.brand} - {self.date} (${self.cost})"
+    
