@@ -50,7 +50,7 @@ pip install -r requirements.txt
 pip install mysqlclient
 ```
 Run XAMPP.  Start Apache and MySQL.
-Create database `meals`.  Add database information to `meals/.env` file
+Create database `meals`.  Add database information to `meal/.env` file
 
 Start backend
 ```bash

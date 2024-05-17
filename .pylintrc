@@ -1,6 +1,6 @@
 [MASTER]
 ignore-patterns=(
-    "meals/migrations",
+    "meal/migrations",
 )
 
 [MAIN]
