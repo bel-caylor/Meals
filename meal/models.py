@@ -82,7 +82,11 @@ class RecipeIngredient(models.Model):
         unique_together = (('recipe', 'ingredient'),)
 
     def __str__(self):
-        return f"{self.recipe.recipe_name} - {self.ingredient.ingredient}"
+        return f"{self.recipe} - {self.ingredient}"
+
+    def get_ingredient_info(self):
+        """Return Recipe - Ingredient - Qty - Unit"""
+        return f"{self.recipe} - {self.ingredient} - {self.qty} - {self.unit}"
 
 class Product(models.Model):
     """Model for specific product instances of an ingredient."""
@@ -94,7 +98,7 @@ class Product(models.Model):
     isle = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
-        return f"{self.ingredient.ingredient} ({self.brand} - {self.size})"
+        return f"{self.ingredient} ({self.brand} - {self.size})"
 
 class Price(models.Model):
     """Model for tracking product prices over time."""
@@ -107,5 +111,8 @@ class Price(models.Model):
         unique_together = (('product', 'date'),)
 
     def __str__(self):
-        return f"{self.product.ingredient.ingredient} - {self.product.brand} - {self.date} (${self.cost})"
-    
+        return f"{self.product} - {self.date} (${self.cost})"
+
+    def get_full_price_string(self):
+        """Returns a string representation including currency symbol."""
+        return f"{self.product} - {self.date} (${self.cost:.2f})"
