@@ -2,9 +2,7 @@
 ignore-patterns=(
     "meal/migrations",
 )
-
 [MAIN]
 max-line-length=130
-
 [MESSAGES]
 disable=too-few-public-methods
