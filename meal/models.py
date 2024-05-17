@@ -112,7 +112,3 @@ class Price(models.Model):
 
     def __str__(self):
         return f"{self.product} - {self.date} (${self.cost})"
-
-    def get_full_price_string(self):
-        """Returns a string representation including currency symbol."""
-        return f"{self.product} - {self.date} (${self.cost:.2f})"
